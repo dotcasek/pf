@@ -1,4 +1,5 @@
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body ng-app="App" ng-cloak>
   <div class="header">
     <md-card>
@@ -14,21 +16,195 @@
           <span class="md-title">Derek Otcasek</span>
         </md-card-header-text>
       </md-card-header>
-      </md-card>
-    </div>
+    </md-card>
+  </div>
 
   <md-content class="md-padding">
-    <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
-      <md-nav-item md-nav-href="#/" name="about">About</md-nav-item>
-      <md-nav-item md-nav-href="#/education" name="education">Education</md-nav-item>
-      <md-nav-item md-nav-href="#/work" name="work">Work History</md-nav-item>
-      <md-nav-item md-nav-href="#/projects" name="projects">Projects</md-nav-item>
-      <md-nav-item md-nav-href="#/cv" name="cv">CV</md-nav-item>
-      <md-nav-item md-nav-href="#/contact" name="contact">Contact</md-nav-item>
-    </md-nav-bar>
+    <md-tabs flex md-swipe-content="true" layout-fill>
+      <md-tab label="About">
+        <md-card>
+          <md-card-title>
+            <md-card-title-text>
+              <span class="md-headline">About Me</span>
+              <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
+            </md-card-title-text>
+            <md-card-title-media>
+              <div class="md-media-md card-media">
+                <img src="img/pic.jpg">
+              </div>
+            </md-card-title-media>
+          </md-card-title>
+          <md-card-content style="width:60%">
+            <p style="margin-top:-60px;min-height: 100px;">
+              I am a computer science major at University of Massachusetts Boston graduating in Fall 2019.
+              I am interested in computer vision, computer graphics, data visualization, data science, mobile and web applications.
+            </p>
+          </md-card-content>
+        </md-card>
+      </md-tab>
+      <md-tab label="Education">
+        <md-card class="default-card zero-margin">
+          <md-card-title>
+            <md-card-title-text>
+              <span translate="" class="md-headline ng-scope">Education</span>
+              <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
+            </md-card-title-text>
+          </md-card-title>
+          <md-card-content>
+            <p><strong>University of Massachusetts Boston</strong> BSCS Computer Science 2019</p>
+            <p><strong>Bunker Hill Community College</strong> AS Computer Science 2017</p>
+          </md-card-content>
+        </md-card>
+      </md-tab>
+      <md-tab label="Work History">
+        <md-card class="default-card zero-margin">
+          <md-card-title>
+            <md-card-title-text>
+              <span translate="" class="md-headline ng-scope">Work History</span>
+              <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
+            </md-card-title-text>
+          </md-card-title>
+          <md-card-content>
+            <p><strong>Software Developer</strong> Library Systems and Discovery Services</p>
+            <p>University of Massachusetts Boston, Healey Library</p>
+            <p>January 2019 - present</p>
+          </md-card-content>
+        </md-card>
+      </md-tab>
+      <md-tab label="Projects">
+        <div class="layout-column flex-100" flex="100" layout="column">
+          <md-card class="default-card zero-margin">
+            <md-card-title>
+              <md-card-title-text>
+                <span translate="" class="md-headline ng-scope">Projects</span>
+                <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
+              </md-card-title-text>
+            </md-card-title>
+          </md-card>
+        </div>
+        <md-content class="layout-xs-column layout-row" layout-xs="column" layout="row">
+          <div class="layout-column flex-50" flex="50" layout="column">
+            <md-card class="default-card zero-margin">
+              <md-card-title>
+                <md-card-title-text>
+                  <span translate="" class="md-headline ng-scope">WebGL shooting game</span>
+                  <span translate="" class="md-subhead ng-scope">Javascript, WebGL</span>
+                  <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
+                </md-card-title-text>
+              </md-card-title>
+              <md-card-content class="proj-card">
+                <a href="https://dotcasek.github.io/cs460student/04/">
+                  <img src="img/game.png" style="width:100%;height:400px;"></a>
+              </md-card-content>
+            </md-card>
 
-    <div ng-view class="md-padding"></div>
+            <md-card class="default-card zero-margin">
+              <md-card-title>
+                <md-card-title-text>
+                  <span translate="" class="md-headline ng-scope">UMBrella Search</span>
+                  <span translate="" class="md-subhead ng-scope">Javascript, AngularJS, HTML, CSS</span>
+                  <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
+                </md-card-title-text>
+              </md-card-title>
+              <md-card-content class="proj-card">
+                <a href="https://umbrella.lib.umb.edu/primo-explore/search?vid=01MA_UMB&lang=en_US/">
+                  <img src="img/umbr.png" style="width:100%;height:400px;"></a>
+              </md-card-content>
+            </md-card>
+            </md-card>
 
+            <md-card class="default-card zero-margin">
+              <md-card-title>
+                <md-card-title-text>
+                  <span translate="" class="md-headline ng-scope">Ezproxy Log Parser</span>
+                  <span translate="" class="md-subhead ng-scope">Java, Tableau</span>
+                  <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
+                </md-card-title-text>
+              </md-card-title>
+              <md-card-content class="proj-card">
+                <a href="https://github.com/UMBLibrary/Ezproxy-Parser/">
+                  <img src="img/tb.png" style="width:100%;height:400px;"></a>
+              </md-card-content>
+            </md-card>
+          </div>
+
+          <div class="layout-column flex-50" flex="50" layout="column">
+            <md-card class="default-card zero-margin">
+              <md-card-title>
+                <md-card-title-text>
+                  <span translate="" class="md-headline ng-scope">Data Visualization</span>
+                  <span translate="" class="md-subhead ng-scope">Python, Matplotlib, OpenCV</span>
+                  <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
+                </md-card-title-text>
+              </md-card-title>
+              <md-card-content class="proj-card">
+                <img src="img/three.png" style="width:100%;height:400px;"></a>
+              </md-card-content>
+            </md-card>
+            </md-card>
+
+            <md-card class="default-card zero-margin">
+              <md-card-title>
+                <md-card-title-text>
+                  <span translate="" class="md-headline ng-scope">SMS Text Message App</span>
+                  <span translate="" class="md-subhead ng-scope">Javascript, PHP, AWS</span>
+                  <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
+                </md-card-title-text>
+              </md-card-title>
+              <md-card-content class="proj-card">
+                <a
+                  href="http://ec2-18-234-102-199.compute-1.amazonaws.com/sms/?title=The%20death%20and%20life%20of%20the%20Great%20Lakes%20%2F%20Dan%20Egan.&location=Main%20Stacks&callNo=(QH104.5.G7%20E43%202017%20)&availability=available&docID=01MA_UMB_ALMA2175616060003746">
+                  <img src="img/sms.png" style="width:100%;height:400px;"></a>
+              </md-card-content>
+            </md-card>
+
+            <md-card class="default-card zero-margin">
+              <md-card-title>
+                <md-card-title-text>
+                  <span translate="" class="md-headline ng-scope">Android Stock App</span>
+                  <span translate="" class="md-subhead ng-scope">Java, Android</span>
+                  <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
+                </md-card-title-text>
+              </md-card-title>
+              <md-card-content class="proj-card">
+                <a href="https://github.com/dotcasek/android_stock/">
+                  <img src="img/mob.png" style="width:100%;height:400px;"></a>
+              </md-card-content>
+            </md-card>
+          </div>
+        </md-content>
+      </md-tab>
+      <md-tab label="CV">
+        <md-card>
+          <md-card-title>
+            <md-card-title-text>
+              <span class="md-headline">CV</span>
+              <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
+            </md-card-title-text>
+          </md-card-title>
+          <md-card-content style="margin-left: auto;margin-right: auto;">
+            <md-card-title-media>
+              <a href="img/Derek-Otcasek-Resume-2019.pdf" target="_blank">
+                <img src="img/thumb.png" style="  width: auto;height: 300px;
+                border: 1px solid;border-color:#000" class="md-media-md card-media"></a>
+            </md-card-title-media>
+          </md-card-content>
+        </md-card>
+      </md-tab>
+      <md-tab label="Contact">
+        <md-card class="default-card zero-margin">
+          <md-card-title>
+            <md-card-title-text>
+              <span translate="" class="md-headline ng-scope">Contact Me</span>
+              <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
+            </md-card-title-text>
+          </md-card-title>
+          <md-card-content>
+            <p><strong>Email :</strong> <a href="mailto:dotcasek@gmail.com">dotcasek@gmail.com</a></p>
+          </md-card-content>
+        </md-card>
+      </md-tab>
+    </md-tabs>
   </md-content>
 
   <div class="footer">
@@ -40,215 +216,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-route.js"></script>
+
 
   <script type="text/javascript">
-    var app = angular.module('App', ['ngMaterial', 'ngRoute']);
-
-
-    (function() {
-      angular.module('App').config(function($routeProvider, $locationProvider) {
-
-
-        $locationProvider.hashPrefix('');
-        $routeProvider.when("/", {
-            template:`
-            <md-card>
-              <md-card-title>
-                <md-card-title-text>
-                  <span class="md-headline">About Me</span>
-                  <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
-                </md-card-title-text>
-                <md-card-title-media>
-                  <div class="md-media-md card-media">
-                    <img src="img/pic.jpg">
-                  </div>
-                </md-card-title-media>
-              </md-card-title>
-            <md-card-content style="width:60%"">
-              <p style="margin-top:-60px;min-height: 100px;">
-                I am a computer science major at University of Massachusetts Boston graduating in Fall 2019.
-                I am interested in computer vision, computer graphics, data visualization, data science, mobile and web applications.
-              </p>
-            </md-card-content>
-
-            </md-card>`
-          })
-          .when("/education", {
-            template:`
-            <md-card class="default-card zero-margin">
-                <md-card-title>
-                  <md-card-title-text>
-                    <span translate="" class="md-headline ng-scope">Education</span>
-                    <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
-                  </md-card-title-text>
-                </md-card-title>
-                <md-card-content>
-                <p><strong>University of Massachusetts Boston</strong> BSCS Computer Science 2019</p>
-                <p><strong>Bunker Hill Community College</strong> AS Computer Science 2017</p>
-                </md-card-content>
-              </md-card>
-              `
-          })
-          .when("/work", {
-            template:`
-            <md-card class="default-card zero-margin">
-                <md-card-title>
-                  <md-card-title-text>
-                    <span translate="" class="md-headline ng-scope">Work History</span>
-                    <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
-                  </md-card-title-text>
-                </md-card-title>
-                <md-card-content>
-                  <p><strong>Software Developer</strong> Library Systems and Discovery Services</p>
-                  <p>University of Massachusetts Boston, Healey Library</p>
-                  <p>January 2019 - present</p>
-                </md-card-content>
-              </md-card>
-              `
-          })
-          .when("/projects", {
-            template:`
-            <div class="layout-column flex-100" flex="100" layout="column">
-                <md-card class="default-card zero-margin">
-                    <md-card-title>
-                      <md-card-title-text>
-                        <span translate="" class="md-headline ng-scope">Projects</span>
-                        <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
-                      </md-card-title-text>
-                    </md-card-title>
-                  </md-card>
-                </div>
-                <md-content class="layout-xs-column layout-row" layout-xs="column" "layout="row">
-                <div class="layout-column flex-50" flex="50" layout="column">
-                  <md-card class="default-card zero-margin">
-                      <md-card-title>
-                        <md-card-title-text>
-                          <span translate="" class="md-headline ng-scope">WebGL shooting game</span>
-                          <span translate="" class="md-subhead ng-scope">Javascript, WebGL</span>
-                          <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
-                        </md-card-title-text>
-                      </md-card-title>
-                    <md-card-content class="proj-card">
-                      <a href="https://dotcasek.github.io/cs460student/04/">
-                      <img src="img/game.png" style="width:100%;height:400px;"></a>
-                      </md-card-content>
-                  </md-card>
-
-                  <md-card class="default-card zero-margin">
-                  <md-card-title>
-                    <md-card-title-text>
-                        <span translate="" class="md-headline ng-scope">UMBrella Search</span>
-                        <span translate="" class="md-subhead ng-scope">Javascript, AngularJS, HTML, CSS</span>
-                        <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
-                      </md-card-title-text>
-                    </md-card-title>
-                    <md-card-content class="proj-card">
-                        <a href="https://umbrella.lib.umb.edu/primo-explore/search?vid=01MA_UMB&lang=en_US/">
-                        <img src="img/umbr.png" style="width:100%;height:400px;"></a>
-                        </md-card-content>
-                    </md-card>
-                  </md-card>
-
-                  <md-card class="default-card zero-margin">
-                      <md-card-title>
-                        <md-card-title-text>
-                          <span translate="" class="md-headline ng-scope">Ezproxy Log Parser</span>
-                          <span translate="" class="md-subhead ng-scope">Java, Tableau</span>
-                          <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
-                        </md-card-title-text>
-                      </md-card-title>
-                      <md-card-content class="proj-card">
-                        <a href="https://github.com/UMBLibrary/Ezproxy-Parser/">
-                        <img src="img/tb.png" style="width:100%;height:400px;"></a>
-                        </md-card-content>
-                    </md-card>
-                  </div>
-
-                  <div class="layout-column flex-50" flex="50" layout="column">
-                  <md-card class="default-card zero-margin">
-                    <md-card-title>
-                      <md-card-title-text>
-                          <span translate="" class="md-headline ng-scope">Data Visualization</span>
-                          <span translate="" class="md-subhead ng-scope">Python, Matplotlib, OpenCV</span>
-                          <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
-                        </md-card-title-text>
-                      </md-card-title>
-                    <md-card-content class="proj-card">
-                        <img src="img/three.png" style="width:100%;height:400px;"></a>
-                        </md-card-content>
-                    </md-card>
-                  </md-card>
-
-                  <md-card class="default-card zero-margin">
-                      <md-card-title>
-                        <md-card-title-text>
-                          <span translate="" class="md-headline ng-scope">SMS Text Message App</span>
-                          <span translate="" class="md-subhead ng-scope">Javascript, PHP, AWS</span>
-                          <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
-                        </md-card-title-text>
-                      </md-card-title>
-                      <md-card-content class="proj-card">
-                        <a href="http://ec2-18-234-102-199.compute-1.amazonaws.com/sms/?title=The%20death%20and%20life%20of%20the%20Great%20Lakes%20%2F%20Dan%20Egan.&location=Main%20Stacks&callNo=(QH104.5.G7%20E43%202017%20)&availability=available&docID=01MA_UMB_ALMA2175616060003746">
-                        <img src="img/sms.png" style="width:100%;height:400px;"></a>
-                        </md-card-content>
-                    </md-card>
-
-                  <md-card class="default-card zero-margin">
-                    <md-card-title>
-                      <md-card-title-text>
-                        <span translate="" class="md-headline ng-scope">Android Stock App</span>
-                        <span translate="" class="md-subhead ng-scope">Java, Android</span>
-                        <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
-                      </md-card-title-text>
-                    </md-card-title>
-                    <md-card-content class="proj-card">
-                      <a href="https://github.com/dotcasek/android_stock/">
-                      <img src="img/mob.png" style="width:100%;height:400px;"></a>
-                    </md-card-content>
-                </md-card>
-             </div>
-          </md-content>
-              `
-          })
-          .when("/cv", {
-            template:`
-            <md-card>
-              <md-card-title>
-                <md-card-title-text>
-                  <span class="md-headline">CV</span>
-                  <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
-                </md-card-title-text>
-              </md-card-title>
-              <md-card-content style="margin-left: auto;margin-right: auto;">
-                <md-card-title-media>
-                  <a href="img/Derek-Otcasek-Resume-2019.pdf" target="_blank">
-                  <img src="img/thumb.png" style="  width: auto;height: 300px;
-                    border: 1px solid;border-color:#000" class="md-media-md card-media"></a>
-                </md-card-title-media>
-              </md-card-content>
-            </md-card>
-
-              `
-          })
-          .when("/contact", {
-            template:`
-            <md-card class="default-card zero-margin">
-                <md-card-title>
-                  <md-card-title-text>
-                    <span translate="" class="md-headline ng-scope">Contact Me</span>
-                    <mat-divider style="border-bottom: 2.5px solid #005a8b;width:60%"></mat-divider>
-                  </md-card-title-text>
-                </md-card-title>
-                <md-card-content>
-                <p><strong>Email :</strong> <a href="mailto:dotcasek@gmail.com">dotcasek@gmail.com</a></p>
-                </md-card-content>
-              </md-card>
-              `
-          });
-      });
-
-    })();
+    var app = angular.module('App', ['ngMaterial']);
   </script>
 </body>
+
 </html>

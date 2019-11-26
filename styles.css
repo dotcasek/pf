@@ -4,25 +4,16 @@ md-card md-card-header {
     height: 40px
 }
 
-
-.md-button.md-accent {
+md-tabs .md-tab.md-active {
   color: #005a8b;
 }
-md-nav-bar md-nav-ink-bar {
-  background:#005a8b;
+mat-ink-bar {
+  background: #005a8b;
 }
 
-.md-button {
+.md-tab {
   font-weight: 600;
   letter-spacing: 0.1em;
-}
-
-.md-button._md-nav-button:focus {
-  background-color: transparent;
-}
-
-.md-button._md-nav-button:hover {
-  background-color: rgba(58, 58, 58, 0.1)
 }
 
 .proj-card {
@@ -32,4 +23,8 @@ md-nav-bar md-nav-ink-bar {
 
 .flex-50, .layout-row > .flex-50 {
     max-width: 100%;
+}
+
+.md-tab:hover {
+  background-color: rgba(58, 58, 58, 0.1)
 }
