@@ -10,3 +10,24 @@ md-nav-bar md-nav-ink-bar,
 .md-button.md-accent {
   color: #005a8b;
 }
+
+.md-button {
+  font-weight: 600;
+}
+
+.md-button._md-nav-button:focus {
+  background-color: transparent;
+}
+
+.md-button._md-nav-button:hover {
+  background-color: rgba(58, 58, 58, 0.1)
+}
+
+.proj-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-50, .layout-row > .flex-50 {
+    max-width: 100%;
+}
