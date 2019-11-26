@@ -18,7 +18,7 @@
     </div>
 
   <md-content class="md-padding">
-    <md-nav-bar md-no-ink-bar="true" md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+    <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
       <md-nav-item md-nav-href="#/" name="about">About</md-nav-item>
       <md-nav-item md-nav-href="#/education" name="education">Education</md-nav-item>
       <md-nav-item md-nav-href="#/work" name="work">Work History</md-nav-item>
@@ -28,7 +28,6 @@
     </md-nav-bar>
 
     <div ng-view class="md-padding"></div>
-
 
   </md-content>
 
@@ -49,6 +48,7 @@
 
     (function() {
       angular.module('App').config(function($routeProvider, $locationProvider) {
+
 
         $locationProvider.hashPrefix('');
         $routeProvider.when("/", {
