@@ -1,0 +1,12 @@
+md-card md-card-header {
+  background: #3e474f;
+    color: white;
+    height: 40px
+}
+
+md-nav-bar.md-default-theme md-nav-ink-bar,
+md-nav-bar md-nav-ink-bar,
+.md-button.md-default-theme.md-accent,
+.md-button.md-accent {
+  color: #005a8b;
+}
