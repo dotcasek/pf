@@ -1,7 +1,7 @@
 md-card md-card-header{
   background: #3e474f;
     color: white;
-    height: 40px
+    height: 30px
 }
 
 md-tabs .md-tab.md-active {
@@ -27,4 +27,10 @@ md-tabs md-ink-bar {
 
 .md-tab:hover {
   background-color: rgba(58, 58, 58, 0.1)
+}
+
+.expand-btn{
+  position: absolute;
+  top: 1em;
+  right: 1em;
 }
