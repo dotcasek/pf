@@ -1,4 +1,4 @@
-md-card md-card-header {
+md-card md-card-header{
   background: #3e474f;
     color: white;
     height: 40px
@@ -7,7 +7,7 @@ md-card md-card-header {
 md-tabs .md-tab.md-active {
   color: #005a8b;
 }
-mat-ink-bar {
+md-tabs md-ink-bar {
   background: #005a8b;
 }
 
