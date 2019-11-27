@@ -1,14 +1,19 @@
 md-card md-card-header{
   background: #3e474f;
-    color: white;
+  color:rgba(255,255,255,0.8);
     height: 30px
 }
 
+md-card-title-text,
+md-card-content {
+  color:rgba(255,255,255,0.8);
+}
+
 md-tabs .md-tab.md-active {
-  color: #005a8b;
+  color: #2cb5e8;
 }
 md-tabs md-ink-bar {
-  background: #005a8b;
+  background: #2cb5e8;
 }
 
 .md-tab {
@@ -26,11 +31,15 @@ md-tabs md-ink-bar {
 }
 
 .md-tab:hover {
-  background-color: rgba(58, 58, 58, 1)
+  background-color: rgba(255, 255, 255, .4)
 }
 
 .expand-btn{
   position: absolute;
   top: 1em;
   right: 1em;
+}
+
+md-card {
+  background-color:#3e474f;
 }
