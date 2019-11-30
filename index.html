@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +14,9 @@
 
 </head>
 
-<body ng-app="App" ng-cloak>
+<body ng-app="App" layout="column" ng-cloak>
+  <md-content class="md-padding" layout="column" layout-fill>
+
   <div class="header">
     <md-card>
       <md-card-header>
@@ -24,8 +27,7 @@
     </md-card>
   </div>
 
-  <md-content class="md-padding">
-    <md-tabs flex md-swipe-content="true" layout-fill>
+    <md-tabs flex md-swipe-content="true">
       <md-tab label="About">
         <md-card style="height: 350px;">
           <md-card-title>
