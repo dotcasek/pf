@@ -43,3 +43,10 @@ md-tabs md-ink-bar {
 md-card {
   background-color:#3e474f;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .md-media-md {
+    height: 350px;
+  }
+ }
