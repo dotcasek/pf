@@ -17,15 +17,15 @@
 <body ng-app="App" layout="column" ng-cloak>
   <md-content class="md-padding" layout="column" layout-fill>
 
-  <div class="header">
-    <md-card>
-      <md-card-header>
-        <md-card-header-text>
-          <span class="md-title">DEREK OTCASEK</span>
-        </md-card-header-text>
-      </md-card-header>
-    </md-card>
-  </div>
+    <div class="header">
+      <md-card>
+        <md-card-header>
+          <md-card-header-text>
+            <span class="md-title">DEREK OTCASEK</span>
+          </md-card-header-text>
+        </md-card-header>
+      </md-card>
+    </div>
 
     <md-tabs flex md-swipe-content="true">
       <md-tab label="About">
@@ -35,14 +35,14 @@
               <span class="md-headline">About Me</span>
               <mat-divider style="border-bottom: 2.5px solid #303030;width:calc(100% - 15px)"></mat-divider>
               <div>
-              <p style="margin-right: 10px;">
-                I am a computer science major at University of Massachusetts Boston graduating in Fall 2019.
-                I am interested in computer vision, computer graphics, data visualization, data science, mobile and web applications.
-              </p>
-            </div>
+                <p style="margin-right: 10px;">
+                  I am a computer science major at University of Massachusetts Boston graduating in Fall 2019.
+                  I am interested in computer vision, computer graphics, data visualization, data science, mobile and web applications.
+                </p>
+              </div>
             </md-card-title-text>
             <md-card-title-media>
-              <div class="md-media-lg card-media">
+              <div class="md-media-md card-media">
                 <img src="img/IMG_4504.jpg" style="border: 1px solid;border-color:#303030">
               </div>
             </md-card-title-media>
@@ -92,8 +92,8 @@
             </md-card-title>
           </md-card>
         </div>
-        <md-content class="layout-xs-column layout-row" layout-xs="column" layout="row" >
-          <div>
+        <md-content class="layout-xs-column layout-row" layout-xs="column" layout="row">
+          <div class="proj-col">
             <div class="layout-column flex-50" flex="50" layout="column" style="min-height: 1628px;">
               <div>
                 <md-card class="default-card zero-margin">
@@ -106,7 +106,7 @@
                   </md-card-title>
                   <md-card-content class="proj-card">
                     <a href="https://dotcasek.github.io/cs460student/04/">
-                      <img src="img/game.png" style="width:100%;height:400px;"></a>
+                      <img src="img/game.png" class="proj-img"></a>
                   </md-card-content>
                 </md-card>
               </div>
@@ -121,7 +121,7 @@
                   </md-card-title>
                   <md-card-content class="proj-card">
                     <a href="https://umbrella.lib.umb.edu/primo-explore/search?vid=01MA_UMB&lang=en_US/">
-                      <img src="img/umbr.png" style="width:100%;height:400px;"></a>
+                      <img src="img/umbr.png" class="proj-img"></a>
                   </md-card-content>
                 </md-card>
               </div>
@@ -136,15 +136,15 @@
                   </md-card-title>
                   <md-card-content class="proj-card">
                     <a href="https://github.com/UMBLibrary/Ezproxy-Parser/">
-                      <img src="img/tb.png" style="width:100%;height:400px;"></a>
+                      <img src="img/tb.png" class="proj-img"></a>
                   </md-card-content>
                 </md-card>
               </div>
             </div>
           </div>
-            <div>
-              <div class="layout-column flex-50" flex="50" layout="column">
-                <div>
+          <div class="proj-col">
+            <div class="layout-column flex-50" flex="50" layout="column">
+              <div>
                 <md-card class="default-card zero-margin">
                   <md-card-title>
                     <md-card-title-text>
@@ -154,7 +154,7 @@
                     </md-card-title-text>
                   </md-card-title>
                   <md-card-content class="proj-card">
-                    <img src="img/three.png" style="width:100%;height:400px;">
+                    <img src="img/three.png" class="proj-img">
                   </md-card-content>
                 </md-card>
               </div>
@@ -170,7 +170,7 @@
                   <md-card-content class="proj-card">
                     <a
                       href="http://ec2-18-234-102-199.compute-1.amazonaws.com/sms/?title=The%20death%20and%20life%20of%20the%20Great%20Lakes%20%2F%20Dan%20Egan.&location=Main%20Stacks&callNo=(QH104.5.G7%20E43%202017%20)&availability=available&docID=01MA_UMB_ALMA2175616060003746">
-                      <img src="img/sms.png" style="width:100%;height:400px;"></a>
+                      <img src="img/sms.png" class="proj-img"></a>
                   </md-card-content>
                 </md-card>
               </div>
@@ -185,7 +185,7 @@
                   </md-card-title>
                   <md-card-content class="proj-card">
                     <a href="https://github.com/dotcasek/android_stock/">
-                      <img src="img/mob.png" style="width:100%;height:400px;"></a>
+                      <img src="img/mob.png" class="proj-img"></a>
                   </md-card-content>
                 </md-card>
               </div>
