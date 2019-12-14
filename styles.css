@@ -63,3 +63,12 @@ md-card {
     width: 100%;
   }
  }
+
+ #res:hover  {
+   opacity: 0.7;
+ }
+
+ .text {
+  font-size: 16px;
+  padding: 16px 32px;
+}
